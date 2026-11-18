@@ -1,0 +1,27 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Input = styled.input`
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px 0px #0000007f;
+  background-color: transparent;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #fff;
+    color: #fff;
+    box-shadow: none;
+  }
+`;
